@@ -18,7 +18,7 @@ Zawartość przewodnika:
 
 ---
 
-## Cel ćwiczenia
+## Cel ćwiczenia.
 
 Pierwszy tutorial ma za zadanie, utrwalić wiadomości na temat podstawowych metod, struktur danych, sterowania przepływem programu.  
 Dodatkowo wprowadzi kilka nowych zagadnień, np. zapis i odczyt danych z pliku. 
@@ -79,7 +79,7 @@ You win:)
 
 ---
 
-## Lista kroków
+## Lista kroków.
 
 ### Proces pisania programu
 
@@ -135,7 +135,7 @@ Po zakończeniu pętli, użytkownik uzyskuje informacje na temat swojego wyniku:
 
 ---
 
-## Wymagane struktury oraz metody
+## Wymagane struktury oraz metody.
 
 ### Struktura tablicy
 
@@ -232,13 +232,13 @@ TODO
 
 ---
 
-## Linki do dokumentacji
+## Linki do dokumentacji.
 
 TODO
 
 ---
 
-## Zgłaszanie problemów i uwag
+## Zgłaszanie problemów i uwag.
 
-Tymczasowo, uwagi oraz problemu można zgłaszać, przez opcję [Issues](https://github.com/mokrzu/code-basics-pl/issues) na Github
+Tymczasowo, uwagi oraz problemy można zgłaszać, przez opcję [Issues](https://github.com/mokrzu/code-basics-pl/issues) na Github
 lub bezpośrednio do mnie - Łukasz.
