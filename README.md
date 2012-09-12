@@ -32,3 +32,58 @@ rozwiązania (najbardziej prawdopodobnych) problemów, a także odnośniki do do
 ## Lista kroków
 
 ![workflow graph](http://cloud.github.com/downloads/mokrzu/code-basics-pl/workflow2.jpg)
+
+## Wymagane struktury oraz metody
+
+### Przykłady pracy z tablicami i napisami
+```ruby
+title = "programming"
+```
+usunięcie znaku nowej lini z napisu
+```ruby
+"hello\n".strip
+=> "hello"
+```
+zamiana napisu na tablicę
+```ruby
+title.split("")
+=> ["p", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
+```
+przypisanie powyższej tablicy do zmiennej
+```ruby
+my_array = title.split("")
+=> ["p", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
+```
+dodanie elementu na koniec tablicy(oraz napisu)
+```ruby
+title << "!"
+=> "programming!"
+
+my_array << "!"
+=> ["p", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g", "!"]
+```
+złączenie elementów tablicy w napis
+```ruby
+["l", "e", "a", "r", "n"].join
+=> "learn"
+
+["l", "e", "a", "r", "n"].join(".")
+=> "l.e.a.r.n"
+```
+zamiana wybranego elementu (x) na inny (a)
+```ruby
+text = "pxndx".split("")
+=> ["p", "x", "n", "d", "x"]
+
+text = text.map do |element|
+  if element == "x"
+		"a"
+	else
+		element
+	end
+end
+=> ["p", "a", "n", "d", "a"]
+
+text.join
+=> "panda"
+```
