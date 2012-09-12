@@ -8,13 +8,13 @@
 
 Zawartość przewodnika:
 
-* [Cel ćwiczenia](#cel-ćwiczenia)
-* [Opis zadania](#opis-zadania)
-* [Lista kroków](#lista-kroków)
-* [Wymagane struktury oraz metody](#wymagane-struktury-oraz-metody)
-* [Rozwiązania problemów](#rozwiazania-problemów)
-* [Linki do dokumentacji](#linki-do-dokumentacji)
-* [Zgłaszanie problemów i uwag](#zgłaszanie-problemów-i-uwag)
+1. **Cel ćwiczenia**
+2. **Opis zadania**
+3. **Lista kroków**
+4. **Wymagane struktury oraz metody**
+5. **Rozwiązania problemów**
+6. **Linki do dokumentacji**
+7. **Zgłaszanie problemów i uwag**
 
 ---
 
@@ -27,13 +27,26 @@ Brak podanego gotowego rozwiązania, ma za zadanie zachęcić do samodzielnej pr
 jednocześnie przewodnik zawiera w sobie wyjaśnienia trudniejszych pojęć, 
 rozwiązania (najbardziej prawdopodobnych) problemów, a także odnośniki do dokumentacji.
 
-
+---
 
 ## Lista kroków
 
 ![workflow graph](http://cloud.github.com/downloads/mokrzu/code-basics-pl/workflow2.jpg)
 
+---
+
 ## Wymagane struktury oraz metody
+
+### Struktura tablicy
+
+Tablica jest uporządkowanym zbiorem elementów.
+Każdy element posiada unikalny dla niego adres w tablicy (index).
+Dzięki temu możemy mieć bezpośredni dostęp do każdego elementu tablicy.
+
+*Numeracja indeksów w tablicach, zawsze zaczyna się od zera.*
+
+![array structure](http://cloud.github.com/downloads/mokrzu/code-basics-pl/array_index.jpg)
+
 
 ### Przykłady pracy z tablicami i napisami
 ```ruby
