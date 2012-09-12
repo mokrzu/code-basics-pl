@@ -18,6 +18,17 @@ Zawartość przewodnika:
 
 ---
 
+## Cel ćwiczenia
+
+Pierwszy tutorial ma za zadanie, utrwalić wiadomości na temat podstawowych metod, struktur danych, sterowania przepływem programu.  
+Dodatkowo wprowadzi kilka nowych zagadnień, np. zapis i odczyt danych z pliku. 
+
+Brak podanego gotowego rozwiązania, ma za zadanie zachęcić do samodzielnej pracy, 
+jednocześnie przewodnik zawiera w sobie wyjaśnienia trudniejszych pojęć, 
+rozwiązania (najbardziej prawdopodobnych) problemów, a także odnośniki do dokumentacji.
+
+
+
 ## Lista kroków
 
 ![workflow graph](http://cloud.github.com/downloads/mokrzu/code-basics-pl/workflow.jpg)
