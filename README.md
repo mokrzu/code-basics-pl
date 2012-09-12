@@ -31,6 +31,8 @@ rozwiązania (najbardziej prawdopodobnych) problemów, a także odnośniki do do
 
 ## Opis zadania.
 
+### Treść
+
 Gra w zgadywanie słowa, polega na odgadnięciu hasła przez użytkownika(gracza).
 
 Gracz w każdej turze podaje jedną literę. 
@@ -40,6 +42,40 @@ Gra powinna działaś z poziomu konsoli, tzn. po uruchomieniu skryptu ```ruby ga
 
 Początkowo zgadywane słowo, będzie przechowywane w kodzie programu. 
 W drugiej części zadania, dodamy możliwość wczytywania haseł do gry, z pliku tekstowego.
+
+### Przykład działania
+
+```
+➭ ruby game.rb
+Guess word with (5 letters)
+_ _ _ _ _
+Put next letter: 
+a
+You're right.
+
+Word = _ a _ _ a
+Put next letter: 
+b
+Wrong letter.2 trials left.
+
+Word = _ a _ _ a
+Put next letter: 
+p
+You're right.
+
+Word = p a _ _ a
+Put next letter: 
+n
+You're right.
+
+Word = p a n _ a
+Put next letter: 
+d
+You're right.
+
+Word = p a n d a
+You win:)
+```
 
 ---
 
