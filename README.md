@@ -31,7 +31,7 @@ rozwiązania (najbardziej prawdopodobnych) problemów, a także odnośniki do do
 
 ## Opis zadania.
 
-### Treść
+### Treść.
 
 Gra w zgadywanie słowa, polega na odgadnięciu hasła przez użytkownika(gracza).
 
@@ -43,7 +43,7 @@ Gra powinna działaś z poziomu konsoli, tzn. po uruchomieniu skryptu ```ruby ga
 Początkowo zgadywane słowo, będzie przechowywane w kodzie programu. 
 W drugiej części zadania, dodamy możliwość wczytywania haseł do gry, z pliku tekstowego.
 
-### Przykład działania
+### Przykład działania.
 
 ```text
 ➭ ruby game.rb
@@ -81,7 +81,7 @@ You win:)
 
 ## Lista kroków.
 
-### Proces pisania programu
+### Proces pisania programu.
 
 Pisząc program, staraj się jak najczęściej testować jego poprawność. Tak aby szybko wykrywać błędy. 
 Z tego powodu, kolejne elementy dodawaj stopniowo. Przetestuj jego działanie. Jeżeli wszystko zachowuje się poprawnie, przejdź do implementacji następnej funkcjonalności.
@@ -137,7 +137,7 @@ Po zakończeniu pętli, użytkownik uzyskuje informacje na temat swojego wyniku:
 
 ## Wymagane struktury oraz metody.
 
-### Struktura tablicy
+### Struktura tablicy.
 
 Tablica jest uporządkowanym zbiorem elementów.
 Każdy element posiada unikalny dla niego adres w tablicy (index).
@@ -148,7 +148,7 @@ Dzięki temu możemy mieć bezpośredni dostęp do każdego elementu tablicy.
 ![array structure](http://cloud.github.com/downloads/mokrzu/code-basics-pl/array_index.jpg)
 
 
-### Przykłady pracy z tablicami i napisami
+### Przykłady pracy z tablicami i napisami.
 ```ruby
 title = "programming"
 ```
@@ -200,7 +200,7 @@ end
 text.join
 => "panda"
 ```
-### Jednoczesna iteracja po dwóch tablicach
+### Jednoczesna iteracja po dwóch tablicach.
 
 Możemy wykonać taką iterację, np. wykorzystując iterator each_with_index.
 Pierwszy argument to element pierwszej tablicy, natomiast odpowiadający mu element drugiej tablicy, 
