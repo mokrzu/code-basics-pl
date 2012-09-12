@@ -29,9 +29,32 @@ rozwiązania (najbardziej prawdopodobnych) problemów, a także odnośniki do do
 
 ---
 
+## Opis zadania.
+
+Gra w zgadywanie słowa, polega na odgadnięciu hasła przez użytkownika(gracza).
+
+Gracz w każdej turze podaje jedną literę. 
+Jeżeli występuje ona w zgadywanym słowie, pokazane zostają pozycje na których odgadnięta litera się znajduje.  Liczba możliwych błędów, tzn. sytuacji gdy podana litera nie występuje w słowie, jest z góry ograniczona. Po jej przekroczeniu, użytkownik przegrywa. Wygrana oznacza podanie wszystkich liter hasła, nie przekraczając ilości możliwych błędów.
+
+Gra powinna działaś z poziomu konsoli, tzn. po uruchomieniu skryptu ```ruby game.rb```.
+
+Początkowo zgadywane słowo, będzie przechowywane w kodzie programu. 
+W drugiej części zadania, dodamy możliwość wczytywania haseł do gry, z pliku tekstowego.
+
+---
+
 ## Lista kroków
 
+### Proces pisania programu
+
+Pisząc program, staraj się jak najczęściej testować jego poprawność. Tak aby szybko wykrywać błędy. 
+Z tego powodu, kolejne elementy dodawaj stopniowo. Przetestuj jego działanie. Jeżeli wszystko zachowuje się poprawnie, przejdź do implementacji następnej funkcjonalności.
+(w tym samym momencie, dobrą praktyką  jest zapisanie wprowadzonych zmian w systemie kontroli wersji (np. git))
+
+
 ![workflow graph](http://cloud.github.com/downloads/mokrzu/code-basics-pl/workflow2.jpg)
+
+### Opis kolejnych kroków.
 
 ---
 
