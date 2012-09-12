@@ -45,7 +45,7 @@ W drugiej części zadania, dodamy możliwość wczytywania haseł do gry, z pli
 
 ### Przykład działania
 
-```
+```text
 ➭ ruby game.rb
 Guess word with (5 letters)
 _ _ _ _ _
@@ -90,7 +90,48 @@ Z tego powodu, kolejne elementy dodawaj stopniowo. Przetestuj jego działanie. J
 
 ![workflow graph](http://cloud.github.com/downloads/mokrzu/code-basics-pl/workflow2.jpg)
 
+**Uwaga:** gdy spotykasz się z nową strukturą lub metodą, wykorzystaj konsolę Rubiego (polecenie ```irb```), aby sprawdzić w praktyce jak działa dany element.  Z poziomu konsoli możesz przetestować wybrany fragment kodu, na przykładowych danych.
+
+**Przykład** aby dowiedzieć się co zwraca metoda split() dla napisu:
+```ruby
+irb(main):001:0> "testing".split("")
+=> ["t", "e", "s", "t", "i", "n", "g"]
+irb(main):002:0> "testing".split("").class
+=> Array
+```
+
+
 ### Opis kolejnych kroków.
+
+**1. Wejście/Wyjście**
+Zaimplementuj podawanie słowa/litery z konsoli, oraz wypisanie go na ekran.  Pamiętaj że słowo wczytane z konsoli,  zawiera na końcu ‘znak końca linii: \n’. Użyj odpowiedniej metody by usunąć ten znak.
+
+**2.  Tablica poprawnych liter.**
+Stwórz tablicę, która będzie miała identyczną długość, jak szukane hasło a także będzie wypełniona znakami podkreślenia. Znak podkreślenia będzie oznacza nie odgadnioną jeszcze literę.  Hasło powinno być przechowywane w zmiennej.
+
+**3. Sprawdzanie czy litera występuje w słowie.**
+Wykorzystaj metodę *include?* aby sprawdzić, czy podana przez gracza litera, znajduje się w szukanym haśle.
+
+**4. Odsłona wszystkich znalezionych wystąpień litery**
+Przy pomocy metody *each_witch_index*, zamień w tablicy zakrytych liter, znak podkreślenia na znalezioną literę. 
+Zmienna *index* wskazuje odpowiednie miejsce w tablicy zakrytych znaków.
+
+**Uwaga:** w programie wykorzystamy 2 tablice. Pierwsza zawiera hasło, natomiast druga: litery poprawnie wskazane przez gracza.
+
+Ilustracja przedstawia taką zamianę dla hasła „code” i podania litery „d”.
+
+![arrays each_with_index](http://cloud.github.com/downloads/mokrzu/code-basics-pl/array.png)
+
+**5.  Dodanie pętli.**
+Przenieś powtarzającą się część kodu, do pętli **while**.  Jak łatwo zauważyć, w programie powtarza się pobieranie litery od użytkownika, sprawdzenie czy występuje ona w haśle oraz odsłonięcie pozycji na których się znajduje. 
+Pętla powinna zostać przerwana gdy użytkownik zgadnie wszystkie literty.
+
+**6.  Zliczanie niepoprawnych odpowiedzi.**
+Zadeklaruj zmienną, której wartość będzie maleć z każdą niepoprawną odpowiedzią.
+Dodaj w pętli warunek, który sprawdza czy użytkownik ma jeszcze prawo zgadywać. Jeżeli jego próby zostały wykorzystane. Pętla powinna zostać przerwana.
+Po zakończeniu pętli, użytkownik uzyskuje informacje na temat swojego wyniku: wygrana/przegrana.
+
+**Koniec;)**
 
 ---
 
