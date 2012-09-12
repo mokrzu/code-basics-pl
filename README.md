@@ -31,4 +31,4 @@ rozwiązania (najbardziej prawdopodobnych) problemów, a także odnośniki do do
 
 ## Lista kroków
 
-![workflow graph](http://cloud.github.com/downloads/mokrzu/code-basics-pl/workflow.jpg)
+![workflow graph](http://cloud.github.com/downloads/mokrzu/code-basics-pl/workflow2.jpg)
