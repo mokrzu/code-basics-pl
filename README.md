@@ -200,3 +200,45 @@ end
 text.join
 => "panda"
 ```
+### Jednoczesna iteracja po dwóch tablicach
+
+Możemy wykonać taką iterację, np. wykorzystując iterator each_with_index.
+Pierwszy argument to element pierwszej tablicy, natomiast odpowiadający mu element drugiej tablicy, 
+uzyskamy dzięki wyrażeniu *druga_tablica[index]*.
+
+Przykładowy program:
+```ruby
+first = ["one", "two", "three", "four"]
+second = [1, 2, 3, 4]
+
+first.each_with_index do |element, index|
+    second[index] = element + " = " + second[index].to_s
+end
+
+second.each {|elem| puts elem}
+```
+Wyjście:
+```text
+one = 1
+two = 2
+three = 3
+four = 4
+```
+---
+
+## Rozwiązania problemów.
+
+TODO
+
+---
+
+## Linki do dokumentacji
+
+TODO
+
+---
+
+## Zgłaszanie problemów i uwag
+
+Tymczasowo, uwagi oraz problemu można zgłaszać, przez opcję [Issues](https://github.com/mokrzu/code-basics-pl/issues) na Github
+lub bezpośrednio do mnie - Łukasz.
