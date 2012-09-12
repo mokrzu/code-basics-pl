@@ -228,7 +228,93 @@ four = 4
 
 ## Rozwiązania problemów.
 
-TODO
+### Nazwy zmiennych.
+Tworzenie opisowych i zrozumiałych nazw dla zmiennych, bardzo ułatwia pisanie kodu.  
+A także znacznie poprawia jego czytelność oraz zrozumiałość.
+
+**ZŁY styl nazewnictwa.**
+```ruby
+x = 4
+h = "panda"
+underscores = ["_","_","_"]
+```
+
+**DOBRY styl nazewnictwa** lub przynajmniej lepszy niż wyżej.
+```ruby
+allowedMistakes = 4
+password = "panda"
+guessedLetters = ["_","_","_"]
+```
+
+### Odsłona  wszystkich wystąpień litery.
+Prawdopodobnie ten fragment zadania sprawia najwięcej trudności. 
+Główne wyzwanie to zrozumienie działania metody **each_with_index**.  
+
+Próba wyjaśnienia jej działania została przedstawiona w sekcji: *Jednoczesna iteracja po dwóch tablicach*. 
+W danym przykładzie widzimy jak przechodząc po elementach pierwszej tablicy (**element** z tablicy **first**) mamy dostęp, 
+do odpowiadającego mu elementu pod względem kolejności, w drugiej tablicy (**second[index]** z tablicy **second**).  
+
+Co oznacza zmienna *index*? Pozycję elementu (*element*) w tablicy po której iterujemy. 
+
+> Iteracja – przejście po kolejnych elementach tablicy.
+
+> Iterator – metoda przechodząca po elementach tablicy. (wykonująca iterację) Np. ‘each’ lub 'map'
+
+
+Wracając do naszego zadania, *hasłem* nazwijmy słowo do odgadnięcia.
+Na początku programu tworzymy tablicę zawierającą znaki podkreślenia, np. **guessedLetters**. Oznaczają one nieodgadnięte poprzez gracza litery hasła.
+
+Gdy już sprawdziliśmy, że litera znajduje się w słowie do odgadnięcia i chcemy odsłonić wszystkie pozycje w tablicy, która służy do wyświetlania graczowi liter które zgadł, wykonujemy następującą operację: 
+
+Iterując po kolejnych literach hasła, sprawdzamy czy dana litera jest identyczna z literą podaną przez użytkownika. Gdy ten warunek jest spełniony, zamieniamy znak podkreślenia na właściwą literę.
+
+```ruby
+guessedLetters[index] = characterFromPlayer
+```
+**Uwaga:** iteratory, w tym *each_with_index*, działają na tablicach. Należy więc przed zastosowaniem ich na haśle, zamienić napis na tablicę. W tym celu stosujemy metodę *split("")*.
+
+### Instrukcje warunkowe  i pętla while.
+Budowa prostej instrukcji warunkowej:
+
+```ruby
+if warunek
+    # kod wykonany gdy warunek jest spełniony
+end
+```
+Budowa instrukcji warunkowej z przypadkiem alternatywnym:
+```ruby
+if warunek
+    # kod wykonany gdy warunek jest spełniony
+else 
+  # kod wykonany gdy warunek jest niespełniony
+end
+```
+W pętli **while** określamy warunek, mówiący czy blok kodu umieszczony w tej pętli, powinien być wykonany jeszcze raz.
+
+> Blok kodu – część kodu umieszczona pomiędzy instrukcją sterującą lub warunkową (if, while, each itd.) a słowem kluczowym  *end*.
+
+> Słowo kluczowe – wyraz zarezerwowany przez język programowania. Nie możemy tworzyć zmiennych o nazwach takich jak słowa kluczowe (else, if, for, gets itp.)
+
+Warunek może łączyć z sobą kilka logicznych sformułowań, przy pomocy słów *and* i *or*.
+```ruby
+while lettersToGuess > 0 and allowedMistakes > 0
+    # blok kodu wykonany gdy oba warunki są spełnione.
+end
+```
+
+### Zmniejszanie wartości zmiennej.
+
+Aby zmniejszyć wartość zmiennej, o pożądaną liczbę, przypisujemy do niej jej *starą* wartość, odpowiednio zmniejszoną.
+```ruby
+# odejmujemy od zmiennej 1
+allowedMistakes = allowedMistakes  –  1
+```
+
+Skrócony zapis:
+```ruby 
+allowedMistakes -= 1
+```
+
 
 ---
 
